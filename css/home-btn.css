@@ -130,3 +130,12 @@ body {
 	box-shadow: 0 0 5px #1eff45, 0 0 15px #1eff45, 0 0 30px #1eff45,
 		0 0 60px #1eff45;
 }
+
+footer {
+	display: block;
+	text-align: center;
+	margin: auto;
+	padding: 10px 20px;
+	background-color: DarkSalmon;
+	color: white;
+}
