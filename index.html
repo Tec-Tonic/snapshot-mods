@@ -1,83 +1,278 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 
 <head>
-  <link rel="shortcut icon" href="images/botframe.png">
-  <meta charset="utf-8" />
-  <title>Mod List</title>
-  <link href="style.css" rel="stylesheet" />
-  <link href="css/halfmoon.min.css" rel="stylesheet" />
-  <script src="js/halfmoon.min.js"></script>
+    <link rel="shortcut icon" href="./images/botframe.png">
+    <title>PandamiumBot</title>
+
+    <link href="./css/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
 </head>
 
-<body class="dark-mode">
-  <!-- Page wrapper with .with-navbar class -->
-  <div class="page-wrapper with-navbar">
-    <!-- Navbar (immediate child of the page wrapper) -->
-    <nav class="navbar">
-      <!-- Navbar content (with toggle sidebar button) -->
-      <div class="navbar-content"></div>
-      <!-- Navbar brand -->
-      <a href="#" class="navbar-brand">
-        <img src="images/botframe.png" alt="..." />
-        Mod Lists
-      </a>
-      
-      <!-- text-monospace = font-family shifted to monospace -->
+<body>
 
-      <!-- Navbar nav -->
-      <ul class="navbar-nav d-none d-md-flex">
-        <!-- d-none = display: none, d-md-flex = display: flex on medium screens and up (width > 768px) -->
-        <li class="nav-item active">
-          <a href="pages/info.html" class="nav-link">Info</a>
-        </li>
-      </ul>
-      <!-- Navbar text -->
-      <span class="navbar-text text-monospace">Last Update: 26/02/2023</span>
-
-      <!-- Navbar content (with the dropdown menu) -->
-      <div class="navbar-content d-md-none ml-auto">
-        <!-- d-md-none = display: none on medium screens and up (width > 768px), ml-auto = margin-left: auto -->
-        <div class="dropdown with-arrow">
-          <button class="btn" data-toggle="dropdown" type="button" id="navbar-dropdown-toggle-btn-1">
-            Menu
-            <i class="fa fa-angle-down" aria-hidden="true"></i>
-          </button>
-          <div class="dropdown-menu dropdown-menu-right w-200" aria-labelledby="navbar-dropdown-toggle-btn-1">
-            <!-- w-200 = width: 20rem (200px) -->
-            <a href="pages/info.html" class="dropdown-item">Info</a>
-            <div class="dropdown-divider"></div>
-            <div class="dropdown-content">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./images/botframe.png" alt="Bootstrap" width="30" height="24"> PandamiumBot Jr.</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Mods
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#shaders">Shaders</a></li>
+                            <li><a class="dropdown-item" href="#fabric">Fabric</a></li>
+                            <li><a class="dropdown-item" href="#pinnit">Pinnit</a></li>
+                            <li><a class="dropdown-item" href="#suggest">Suggested Mods</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="https://github.com/Tec-Tonic/snapshot-mods/issues"
+                                    target="_blank">Report Issue</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">08/03/2023</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Version: Snapshot 1.19.4-pre release 1</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    Unofficial Builds
+                </form>
             </div>
-          </div>
         </div>
-      </div>
     </nav>
-  </div>
 
-
-  <head>
-    <link href="css/home-btn.css" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Glassmorphism button</title>
-
-  </head>
-
-  <body>
+    <!--Alert-->
     <div class="container">
-      <div class="btn"><a href="pages/mods.html">Mods</a></div>
-      <div class="btn"><a href="pages/iris.html">Iris & Sodium</a></div>
-      <div class="btn"><a href="pages/fabric.html">Fabric</a></div>
-      <div class="btn"><a href="pages/modrinth.html">Modrinth</a></div>
+        <div class="alert alert-info" role="alert">
+            <p>
+                <strong> Do not report issues with these builds using the official sites. These are unofficial builds.
+                </strong>
+            </p>
+            <p>
+                <a href="https://github.com/Tec-Tonic/snapshot-mods/issues" class="btn btn-outline-danger"
+                    target="_blank">Report Issue</a>
+            </p>
+        </div>
     </div>
-  </body>
 
-  <!-- Requires halfmoon.js for the dropdowns -->
-  <script src="path/to/halfmoon.js"></script>
+    <!--Download bars-->
+    <div class="container ">
+        <!--Header - Shaders -->
+        <div class="shadow p-3 mb-5 bg-body-tertiary rounded fs-2 text-center" id="shaders">Shaders</div>
+
+        <div class="row row-gap-4">
+            <div class="col-sm-6 mb-3 mb-sm-0">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title text-info-emphasis">Iris</h5>
+                        <p class="card-text">
+                            Iris improves the way that Minecraft renders entities and block entities like chests, pigs,
+                            item frames, and more!
+                        </p>
+                        <a href="./mods/iris/iris-mc1.19.4-pre1-1.6.0-beta-snap.4-f6c98760.jar" class="btn btn-primary">Download</a> <!--Pre 1-->
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title text-info-emphasis">Sodium</h5>
+                        <p class="card-text">
+                            Sodium is a free and open-source rendering optimization mod for Minecraft which greatly
+                            improves frame rates and stuttering while fixing many graphical issues.
+                        </p>
+                        <a href="./mods/sodium/sodium-fabric-mc1.19.4-pre1-0.4.10rev.9a2a2ea-dirty.jar" class="btn btn-primary">Download</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--Header - Shaders -->
+            <div class="shadow p-3 mb-5 bg-body-tertiary rounded fs-2 text-center" id="fabric">Fabric</div>
+        </div>
+    </div>
+
+    <!--Fabric-->
+    <div class="container">
+        <div class="row row-gap-4">
+            <div class="col-sm-6 mb-3 mb-sm-0">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title text-info-emphasis">Fabric API</h5>
+                        <p class="card-text">
+                            Fabric API is the core library for the most common hooks and inter-compatibility measures
+                            utilized by mods using the Fabric toolchain
+                        </p>
+                        <a href="https://www.curseforge.com/minecraft/mc-mods/fabric-api/files/4409866" class="btn btn-primary" target="_blank">Open</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title text-info-emphasis">Fabric Installer</h5>
+                        <p class="card-text">
+                            fabric-installer is a tool for creating Fabric-ready profiles for the official Minecraft
+                            launcher.
+                        </p>
+                        <a href="https://fabricmc.net/use/installer/" class="btn btn-primary" target="_blank">Open</a>
+                    </div>
+                </div>
+            </div>
+
+            <!--Header - Shaders -->
+            <div class="shadow p-3 mb-5 bg-body-tertiary rounded fs-2 text-center" id="pinnit">Pinnit Ported Mods</div>
+        </div>
+    </div>
+
+    <!--Pinnit-->
+    <div class="container">
+        <div class="row row-gap-4">
+            <div class="col-sm-6 mb-3 mb-sm-0">
+                <div class="card">
+                    <div class="card-body">
+                        <p class="text-muted">
+                            These Mods are ported by tomalbrc a.k.a. Pinnit, this will link to their site!
+                        </p>
+                        <p>
+                            Mods they have Ported:
+                        <ul>
+                            <li>Malilib</li>
+                            <li>Litematica</li>
+                            <li>Minihud</li>
+                            <li>Item Scroller</li>
+                            <li>Just Map</li>
+
+                        </ul>
+                        </p>
+                        <p>
+                            These are maintainted by Pinnit<br>
+                            Version: Snapshot 1.19.4-pre 2
+                        </p>
+                        <a href="https://tomalbrc.github.io/blog/" class="btn btn-primary" target="_blank">Pinnits Mods and Ports</a>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!--Header - Shaders -->
+            <div class="shadow p-3 mb-5 bg-body-tertiary rounded fs-2 text-center" id="suggest">Suggested Mods</div>
+        </div>
+    </div>
+
+    <!--Suggested-->
+    <div class="container text-center">
+        <h1 class="text-muted">Work In Progress</h1>
+    </div>
+    <!--
+    <div class="container">
+        <div class="row row-gap-4">
+            <div class="col-sm-6 mb-3 mb-sm-0">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title text-info-emphasis">Name</h5>
+                        <p class="card-text">
+                            Something
+                        </p>
+                        <a href="#" class="btn btn-primary">Download</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title text-info-emphasis">Name</h5>
+                        <p class="card-text">
+                            Something
+                        </p>
+                        <a href="#" class="btn btn-primary">Download</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 mb-3 mb-sm-0">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title text-info-emphasis">Name</h5>
+                        <p class="card-text">
+                            Something
+                        </p>
+                        <a href="#" class="btn btn-primary">Download</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title text-info-emphasis">Name</h5>
+                        <p class="card-text">
+                            Something
+                        </p>
+                        <a href="#" class="btn btn-primary">Download</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 mb-3 mb-sm-0">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title text-info-emphasis">Name</h5>
+                        <p class="card-text">
+                            Something
+                        </p>
+                        <a href="#" class="btn btn-primary">Download</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title text-info-emphasis">Name</h5>
+                        <p class="card-text">
+                            Something
+                        </p>
+                        <a href="#" class="btn btn-primary">Download</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    -->
+
+    <br>
+
+    <nav class="navbar  bg-body-tertiary">
+        <div class="container-fluid">
+            <p>All Mods provided AS IS
+                <br>
+                Website maintained by <a href="https://ko-fi.com/tectonic">Tec</a>
+            </p>
+        </div>
+    </nav>
 
 </body>
-
 
 </html>
